@@ -18,7 +18,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
  
-bundle 'gmarik/vundle'
+" bundle 'gmarik/vundle'
 " PLACE ADDONS HERE "
 Bundle 'tpope/vim-rails'
 Bundle 'vim-ruby/vim-ruby'
