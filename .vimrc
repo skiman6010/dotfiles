@@ -15,10 +15,10 @@ set incsearch
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
  
-Bundle 'gmarik/vundle'
+bundle 'gmarik/vundle'
 " PLACE ADDONS HERE "
 Bundle 'tpope/vim-rails'
 Bundle 'vim-ruby/vim-ruby'
@@ -40,6 +40,7 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'plasticboy/vim-markdown'
 
+call vundle#end()
 filetype plugin indent on     " required!
 
 let g:syntastic_enable_signs=1
