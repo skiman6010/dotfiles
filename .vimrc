@@ -26,7 +26,6 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'bash-support.vim'
 Bundle 'bling/vim-airline'
 Bundle 'scrooloose/syntastic'
-Bundle 'SuperTab'
 Bundle 'tpope/vim-fugitive'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'scrooloose/nerdtree'
@@ -39,7 +38,6 @@ Bundle 'Indent-Guides'
 Bundle 'pangloss/vim-javascript'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'plasticboy/vim-markdown'
-Bundle 'arithran/vim-pizza'
 
 call vundle#end()
 filetype plugin indent on     " required!
@@ -48,7 +46,6 @@ let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
 let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
 let g:vim_markdown_folding_disabled=1
-let g:vim_pizza_url ='https://www.papajohns.com/order/builder/productBuilderInfo?productGroupId=pan-cheese&productSKU.sku=1-296-3-83&quantity=1'
 
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
@@ -78,3 +75,7 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 
 " Show all open buffers and their status
 nmap <leader>bl :ls<CR>
+
+" CtrlP Bindings
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
