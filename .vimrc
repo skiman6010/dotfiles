@@ -38,7 +38,7 @@ Bundle 'Indent-Guides'
 Bundle 'pangloss/vim-javascript'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'plasticboy/vim-markdown'
-
+Bundle 'RRethy/vim-illuminate'
 call vundle#end()
 filetype plugin indent on     " required!
 
