@@ -2,7 +2,7 @@
 
 dir=~/Downloads/Development/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="python.vim .vimrc "        # list of files/folders to symlink in homedir
+files=".zshrc .vimrc "        # list of files/folders to symlink in homedir
 
 ##########
 
@@ -23,5 +23,9 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/$file
 done
+
+# set up Vundle for vim packages
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
 
 source ~/.vimrc
